@@ -1,10 +1,8 @@
-
-aufg = int(input("Moechtest du eine Nachicht Option 1: verschluesseln ODER Option 2: entschluesseln? SCHREIBE 1 ODER 2! :"))
-
+aufg = int(input("Option 1: Nachicht verschluesseln ODER Option 2:Nachicht entschluesseln? SCHREIBE '1' ODER '2'! :"))
 
 if aufg == 1:
-   msg = input("wie lautet deine nachicht?: ")
-   schluessel = input("wie lautet der schluessel?(zwischen 0 und 25): ")
+   msg = input("Wie lautet deine Nachicht?: ")
+   schluessel =int(input("Wie lautet der schluessel?(zwischen 0 und 25): "))
    ceasar_code = ""
    
    if 0 <= schluessel <= 25 :
@@ -26,8 +24,8 @@ if aufg == 1:
 
       
 elif aufg == 2:
-    msg = input("wie lautet deine geheime! Nachicht? : ")
-    schluessel = input( "wie lautet der schluessel?(zwischen 0 und 25): ")
+    msg = input("Wie lautet deine geheime Nachicht? : ")
+    schluessel = int(input( "Wie lautet der Schluessel?(zwischen 0 und 25): "))
     if 0 <= schluessel <= 25:
         entschluessel = -abs(schluessel)
         ceasar_code = ""
@@ -51,4 +49,4 @@ elif aufg == 2:
         print("inkorekter Schluessel!")
             
 else:
-    print("error: Achte darauf es genau so zu schreiben wie es da steht!")
+    print("error: Nur '1' oder '2'!")
